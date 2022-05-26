@@ -3,3 +3,4 @@ email = "john.doe@example.com"
 www = "example.com"
 linkedin = "example"
 github = "example"
+skills = [ "Go", "TypeScript", "JavaScript", "GraphQL", "HTML 5", "CSS 3", "Linux", "Git" ]

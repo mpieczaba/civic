@@ -1,3 +1,7 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -14,9 +18,15 @@ body {
   height: 100%;
   background-color: #f8f9fa;
   color: #212529;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.cv--header {
+.cv--header, .cv--skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-name, .cv-title {
   font-family: 'Catamaran', sans-serif;
 }
 
@@ -25,12 +35,15 @@ body {
   font-size: 3rem;
 }
 
-.cv-social-media {
+.cv-social-media, .cv-skills {
   display: flex;
   flex-direction: row;
   margin: 0;
   padding: 0;
   gap: 1rem;
+}
+
+.cv-social-media {
   list-style: none;
 }
 
@@ -54,4 +67,14 @@ body {
 .cv-social-media--link {
   color: #212529;
   text-decoration: none;
+}
+
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.cv-skills--item {
+  list-style-position: inside;
 }
