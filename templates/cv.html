@@ -1,0 +1,7 @@
+{% set cv = load_data(path="/content/cv.toml") %}
+
+<header class="cv--header">
+    <h1 class="cv-name">{{ cv.name }}</h1>
+
+    {% include "social-media.html" %}
+</header>
