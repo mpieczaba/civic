@@ -1,0 +1,11 @@
+base_url = "http://localhost/"
+compile_sass = true
+build_search_index = false
+
+title = "Civic"
+description = "CV/resume generator"
+
+[markdown]
+highlight_code = false
+
+[extra]

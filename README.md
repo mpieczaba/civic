@@ -1,1 +1,2 @@
-# civic
+# civic 🚙
+**CV/resume generator**
