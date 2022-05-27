@@ -19,7 +19,7 @@ footer {
   display: flex;
   flex-direction: row;
   text-align: center;
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   color: rgba(33, 37, 41, 0.7);
 }
 
@@ -40,10 +40,10 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 794px; // A4 width
-  height: 1123px; // A4 height
-  padding: 2rem;
-  margin: 2rem;
+  width: calc(794px - 2rem); // A4 width
+  height: calc(1123px - 2.1rem); // A4 height
+  padding: 1rem 2rem;
+  margin: 1rem;
   font-family: 'Open Sans', sans-serif;
   border: 3px solid #00e6e6;
 }
@@ -51,7 +51,6 @@ footer {
 .cv--header {
   display: flex;
   flex-direction: column;
-  margin-bottom: 2rem;
   width: 100%;
 }
 
@@ -68,6 +67,10 @@ footer {
   font-weight: bold;
   font-size: 3rem;
   margin: 0;
+}
+
+.cv-title {
+  margin-bottom: 0.5rem;
 }
 
 .cv-social-media, .cv-skills {
@@ -134,3 +137,29 @@ footer {
   color: #212529;
 }
 
+.download {
+  padding-bottom: 2rem;
+}
+
+.download--button {
+  padding: 0.5rem;
+  background: #00e6e6;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  border: 3px solid #00e6e6;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background: #f8f9fa;
+    color: #212529;
+    border: 3px solid #00e6e6;
+  }
+}
+
+@media only print {
+  .download {
+    display: none;
+  }
+}
