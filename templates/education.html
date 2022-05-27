@@ -1,0 +1,6 @@
+<h2 class="cv-title">Education</h2>
+
+{% for school in cv.education %}
+    <strong>{{ school.name }}</strong>
+    {{ school.description | markdown | safe }}
+{% endfor %}

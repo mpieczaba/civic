@@ -1,0 +1,6 @@
+<h2 class="cv-title">Achievements</h2>
+
+{% for achievement in cv.achievements %}
+    <strong>{{ achievement.name }}</strong>
+    {{ achievement.description | markdown | safe }}
+{% endfor %}

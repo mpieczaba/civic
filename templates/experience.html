@@ -1,0 +1,20 @@
+<h2 class="cv-title">Experience</h2>
+
+{% for job in cv.experience %}
+    <strong class="cv-experience--name">{{ job.name }}</strong>
+
+    {% if job.company %}
+        <div class="cv-experience--company">{{ job.company | markdown(inline = true) | safe }}</div>
+    {% endif %}
+
+    <i class="cv-experience--range">
+        {{ job.start_date | date(format="%B %Y") }} —
+        {% if job.end_date %}
+            {{ job.end_date | date(format="%B %Y") }}
+        {% else %}
+            Present
+        {% endif %}
+    </i>
+
+    {{ job.description | markdown | safe }}
+{% endfor %}

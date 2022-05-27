@@ -1,0 +1,9 @@
+<h2 class="cv-title">Languages</h2>
+
+<ul class="cv-languages">
+    {% for language in cv.languages %}
+        <li class="cv-languages--item">
+            <strong class="">{{ language.name }}</strong> — {{ language.level }}
+        </li>
+    {% endfor %}
+</ul>
