@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@700&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background: #f8f9fa;
+  color: #212529;
+  bottom: 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-size: 0.6rem;
+  color: rgba(33, 37, 41, 0.7);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 1rem;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(794px - 2rem); // A4 width
+  height: calc(1123px - 2.1rem); // A4 height
+  padding: 1rem 2rem;
+  margin: 1rem;
+  font-family: 'Open Sans', sans-serif;
+  border: 3px solid #00e6e6;
+}
+
+.cv--header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cv--skills, .cv--education {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-name, .cv-title {
+  font-family: 'Catamaran', sans-serif;
+}
+
+.cv-name {
+  font-weight: bold;
+  font-size: 3rem;
+  margin: 0;
+}
+
+.cv-title {
+  margin-bottom: 0.5rem;
+}
+
+.cv-social-media, .cv-skills {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+
+.cv-social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.cv-social-media--item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  border-right: 3px solid #00e6e6;
+
+  &:first-child {
+    padding-left: 0;
+  }
+
+  &:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+.cv-social-media--icon {
+  font-size: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.cv-social-media--link {
+  color: #212529;
+  text-decoration: none;
+}
+
+.cv-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cv-skills, .cv-languages {
+  padding: 0;
+}
+
+.cv-skills--item, .cv-languages--item {
+  padding-right: 1rem;
+  list-style-position: inside;
+}
+
+.cv-experience--name, .cv-experience--range,
+.cv-certifications--name, .cv-certifications--range,
+.cv-languages--name {
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-experience--company a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.download {
+  padding-bottom: 2rem;
+}
+
+.download--button {
+  padding: 0.5rem;
+  background: #00e6e6;
+  color: #f8f9fa;
+  text-transform: uppercase;
+  border: 3px solid #00e6e6;
+  border-radius: 0;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    background: #f8f9fa;
+    color: #212529;
+    border: 3px solid #00e6e6;
+  }
+}
+
+@media only print {
+  .download {
+    display: none;
+  }
+}

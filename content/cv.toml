@@ -1,0 +1,66 @@
+name = "John Doe"
+email = "john.doe@example.com"
+www = "example.com"
+linkedin = "example"
+github = "example"
+
+experience = [
+    { name = "Nullstack developer", company = "[Wiggle](https://company-domain.com)", start_date = "2019-09-19", description = """
+Working on top secret projects, including
+- **Wiggle Pixel XXL** — mobile applications in Kotlin
+- **Wiggle Potassium** — browser sandbox in JavaScript
+    """ },
+    { name = "Freelancer", start_date = "2017-04-04", end_date = "2019-08-24", description = """
+Websites for clients in HTML 5, CSS 3 and Javascript.
+    """ }
+]
+
+skills = ["Go", "TypeScript", "JavaScript", "GraphQL", "HTML 5", "CSS 3", "Linux", "Git"]
+
+education = [
+    { name = "University Name", description = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
+    """ },
+    { name = "High School Name", description = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
+    """ }
+]
+
+achievements = [
+    { name = "Hackathon 2020 — 2nd place", description = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
+- About the project and technologies used...
+- More information...
+    """ },
+    { name = "Hackathon 2019 — 3rd place", description = """
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+aliqua.
+- About the project and technologies used...
+- More information...
+    """ }
+]
+
+certifications = [
+    { name = "AWS Certified Cloud Practitioner", issue_date = "2017-08-04", description = """
+Verification number: `D 91308`.
+    """ },
+    { name = "Microsoft Certified: Azure Fundamentals", issue_date = "2017-04-04", expiry_date = "2019-04-04", description = """
+Verification number: `F PM 01201`.
+    """ }
+]
+
+languages = [
+    { name = "English", level = "native" },
+    { name = "Hindi", level = "upper-intermediate" }
+]
+
+clause = """
+I consent to the processing of my personal data for the purposes necessary for implementation of this process and
+future recruitment (in accordance with the Act of May 10, 2018 on the protection of personal data (Journal of Laws of
+2018, item 1000) and in accordance with the Regulation of the European Parliament and of the Council (EU) 2016/679 of
+April 27, 2016 on the protection of individuals with regard to the processing of personal data and on the free
+movement of such data, and repealing Directive 95/46/EC (GDPR)).
+"""

@@ -1,0 +1,14 @@
+<h2 class="cv-title">Certifications</h2>
+
+{% for certification in cv.certifications %}
+    <strong class="cv-certifications--name">{{ certification.name }}</strong>
+    <i class="cv-certifications--range">
+        {{ certification.issue_date | date(format="%B %Y") }}
+        {% if certification.expiry_date %}
+             — {{ certification.expiry_date | date(format="%B %Y") }}
+        {% else %}
+            (No expiration date)
+        {% endif %}
+    </i>
+    {{ certification.description | markdown | safe }}
+{% endfor %}

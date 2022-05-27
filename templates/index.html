@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ config.description | safe }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://unpkg.com/@tabler/icons@latest/iconfont/tabler-icons.min.css">
+    <link rel="stylesheet" href="{{ get_url(path="styles.css", cachebust=true | safe) }}">
+
+    <title>{{ config.title }}</title>
+</head>
+<body>
+<div id="cv" class="content">
+    {% block content %}
+        {% include "cv.html" %}
+    {% endblock content %}
+</div>
+
+<aside class="download">
+    <button id="download" class="download--button">Print/Save as PDF</button>
+</aside>
+
+<script>
+    document.getElementById("download").addEventListener("click", () => window.print());
+</script>
+</body>
+</html>

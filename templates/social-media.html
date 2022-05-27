@@ -1,0 +1,31 @@
+<ul class="cv-social-media">
+    <li class="cv-social-media--item">
+        <i class="cv-social-media--icon ti ti-mail"></i>
+        <a class="cv-social-media--link" href="{{ "mailto:" ~ cv.email }}" target="_blank" rel="noopener">
+        {{ cv.email }}
+        </a>
+    </li>
+
+    <li class="cv-social-media--item">
+        <i class="cv-social-media--icon ti ti-id"></i>
+        <a class="cv-social-media--link" href="{{ "https://" ~ cv.www }}" target="_blank" rel="noopener">
+        {{ cv.www }}
+        </a>
+    </li>
+
+    <li class="cv-social-media--item">
+        <i class="cv-social-media--icon ti ti-brand-linkedin"></i>
+        <a class="cv-social-media--link" href="{{ "https://www.linkedin.com/in/" ~ cv.linkedin }}" target="_blank"
+        rel="noopener">
+        {{ cv.linkedin }}
+        </a>
+    </li>
+
+    <li class="cv-social-media--item">
+        <i class="cv-social-media--icon ti ti-brand-github"></i>
+        <a class="cv-social-media--link" href="{{ "https://github.com/" ~ cv.github }}" target="_blank"
+        rel="noopener">
+        {{ cv.github }}
+        </a>
+    </li>
+</ul>

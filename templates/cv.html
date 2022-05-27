@@ -1,0 +1,41 @@
+{% set cv = load_data(path="/content/cv.toml") %}
+
+<header class="cv--header">
+    <h1 class="cv-name">{{ cv.name }}</h1>
+
+    {% include "social-media.html" %}
+</header>
+
+<div class="row">
+    <div class="column">
+        <section class="cv--experience">
+            {% include "experience.html" %}
+        </section>
+
+        <section class="cv--skills">
+            {% include "skills.html" %}
+        </section>
+
+        <section class="cv--education">
+            {% include "education.html" %}
+        </section>
+    </div>
+
+    <div class="column">
+        <section class="cv--achievements">
+            {% include "achievements.html" %}
+        </section>
+
+        <section class="cv--certifications">
+            {% include "certifications.html" %}
+        </section>
+
+        <section class="cv--languages">
+            {% include "languages.html" %}
+        </section>
+    </div>
+</div>
+
+<footer class="cv--clause">
+    {{ cv.clause }}
+</footer>
